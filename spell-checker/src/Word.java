@@ -11,7 +11,7 @@ public class Word {
 	private boolean capitalized;
 
 	public Word(String word, int lineNumber, int colNumber, boolean start) {
-		this.value = word;
+		this.value = word.toLowerCase();
 		this.lineNumber = lineNumber;
 		this.colNumber = colNumber;
 		this.start = start; //Represents whether or not a word is thought to be the start of a sentence
